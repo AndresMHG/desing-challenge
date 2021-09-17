@@ -154,9 +154,16 @@ p.linea span {
 }
 
 .text5 {
-  font-family: Poppins-Bold, sans-serif;
+  font-family: Poppins-Regular, sans-serif;
   font-size: 2vh;
   color: #ffffff;
+  cursor: pointer;
+}
+
+.text6 {
+  font-family: Poppins-Bold, sans-serif;
+  font-size: 2vh;
+  color: #00A19A;
   cursor: pointer;
 }
 
