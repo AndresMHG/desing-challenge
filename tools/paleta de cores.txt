@@ -1,6 +1,0 @@
-Azul/verde Produzzi: #00A19A;
-Background: #1D1D1D;
-Textos: #FFF;
-Botão Facebook: #4066B7 e #325399;
-Botão Google: #DD4C39 e #DD3C27;
-Botão LinkedIn: #007BB6 e #016C9E;
