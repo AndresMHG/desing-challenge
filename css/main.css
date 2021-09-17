@@ -30,109 +30,164 @@ body, html {
 }
 
 .container-100 {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url("../images/backgroundImageLogin.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.container-login {
-  width: 40%;
-  padding: 10px 10px 10px 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.container-card-login {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.txt1 {
-  font-family: Poppins-Bold;
-  font-size: 24px;
-  color: #ffffff;
-  line-height: 1.2;
-  text-align: center;
   width: 100%;
-  display: block;
-  padding-bottom: 20px;
+  min-height: 100vh;
 }
 
-.txt2 {
-  font-family: Poppins-Medium;
-  font-size: 15px;
-  color: #e9e9e9;
-  line-height: 1.2;
-}
-
-.txt3 {
-  font-family: Poppins-Medium;
-  font-size: 12px;
-  color: #e9e9e9;
-  line-height: 1.2;
-}
-
-.input100 {
-  font-family: Poppins-Medium;
-  font-size: 15px;
-  line-height: 1.5;
-  color: #666666;
-  display: block;
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
-  background: #e6e6e6;
   height: 50px;
-  border-radius: 25px;
-  padding: 0 30px 0 68px;
 }
 
-.logo {
-  width: 150px;
+.bg-image {
+  background-image: url("../images/backgroundImageLogin.jpg"); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: calc(100vh - 50px);
 }
 
-@media only screen and (max-width: 900px) {
-  .container-login {
-    width: 80%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
+.bg-black1 {
+  background-color: #1D1D1D;
+}
 
-  .container-card-login {
-    padding-left: 10px;
-    padding-right: 10px;
+.container-main {
+  width: 100%;
+  height: calc(100vh - 50px);
+}
+
+.text1 {
+  font-family: Poppins-Bold, sans-serif;
+  font-size: 4vh;
+  color: white;
+}
+
+.text2 {
+  font-family: Poppins-Regular, sans-serif;
+  font-size: 2vh;
+  color: white;
+}
+
+.text3 {
+  font-family: Poppins-Regular, sans-serif;
+  font-size: 2vh;
+  color: white;
+  cursor: pointer;
+}
+
+.input {
+  width: 60%;
+  height: 4vh;
+  border-radius: 1rem;
+  font-size: 16px;
+  white-space: nowrap;
+  text-align: center;
+  color: black;
+}
+
+.input::placeholder { color: black; }
+
+.check-input1 {
+  opacity: 1;
+}
+
+.btn-submit {
+  border-radius: 1rem;
+  background-color: #00A19A;
+  text-decoration: none;
+  width: 30vh;
+  height: 4vh;
+}
+
+p.linea {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+p.linea:before {
+  border-top: 1px solid #7b7b7a;
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+p.linea span {
+
+  background: #1D1D1D;
+  padding: 0 15px;
+}
+
+.btn-social {
+  height: 5vh;
+  width: 40vh;
+  color: white;
+  font-family: Poppins-Medium;
+  margin-top: 10px;
+}
+
+.bg-facebook {
+  background-image: linear-gradient(to right top, #4066b7, #3c61af, #395ca8, #3558a0, #325399);
+}
+
+.bg-google {
+  background-image: linear-gradient(to right top, #dd4c39, #dd4835, #dd4430, #dd402c, #dd3c27);
+}
+
+.bg-linkedin {
+  background-image: linear-gradient(to right top, #007bb6, #0077b0, #0073aa, #0070a4, #016c9e);
+}
+
+.text4 {
+  font-family: Poppins-Regular, sans-serif;
+  font-size: 2vh;
+  color: #00A19A;
+  cursor: pointer;
+}
+
+.text5 {
+  font-family: Poppins-Bold, sans-serif;
+  font-size: 2vh;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.bg-color {
+  color: rgb(114, 114, 114);
+}
+
+.input-search {
+  background: #1D1D1D;
+  color: white;
+  font-size: 12px;
+  border-radius: 1rem;
+  width: 100px;
+}
+
+.icon {
+  color: white;
+  cursor: pointer;
+}
+
+.input-search::placeholder { color: white }
+
+
+@media only screen and (max-width: 580px) {
+  .bg-image {
+    height: 0;
   }
 }
 
-@media only screen and (max-width: 400px) {
-
-  .container-card-login {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-  .logo {
-    width: 100px;
-  }
-
-  .txt1 {
-    font-size: 18px;
-  }
-
-  .txt2 {
-    font-size: 14px;
-  }
-  
-  .txt3 {
-    font-size: 10px;
-  }
-  
-  .input100 {
-    font-size: 12px;
-    height: 40px;
-    border-radius: 25px;
+@media only screen and (max-width: 630px) {
+  .container-items-header{
+    display: none;
   }
 }
